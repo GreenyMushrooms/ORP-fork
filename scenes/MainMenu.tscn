@@ -138,18 +138,9 @@ func _process(delta: float) -> void:
 	mat.set_shader_parameter(\"elapsed_time\",elapsed_time)
 "
 
-[node name="MainMenu" type="Node2D" unique_id=361961899 node_paths=PackedStringArray("menu_avatar", "body_parts")]
+[node name="MainMenu" type="Node2D" unique_id=361961899]
 position = Vector2(-27, 103)
 script = ExtResource("1_ow34m")
-menu_avatar = NodePath("AvatarCustom/SubViewportContainer/SubViewport/CharacterAvatar")
-body_parts = {
-NodePath("AvatarCustom/VBoxContainer/HeadRow/head"): "head",
-NodePath("AvatarCustom/VBoxContainer/TorsoRow/torso"): "torso",
-NodePath("AvatarCustom/VBoxContainer/LeftArmRow/left_arm"): "left_arm",
-NodePath("AvatarCustom/VBoxContainer/RightArmRow/right_arm"): "right_arm",
-NodePath("AvatarCustom/VBoxContainer/LeftLegRow/left_leg"): "left_leg",
-NodePath("AvatarCustom/VBoxContainer/RightLegRow/right_leg"): "right_leg"
-}
 
 [node name="ContextMenu" type="PopupMenu" parent="." unique_id=73262679]
 oversampling_override = 1.0

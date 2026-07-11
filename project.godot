@@ -14,7 +14,7 @@ config/name="Obbying Revival Project"
 config/version="0.7.0"
 run/main_scene="uid://de5w0bnvhc3wn"
 config/auto_accept_quit=false
-config/features=PackedStringArray("4.7", "GL Compatibility")
+config/features=PackedStringArray("4.7", "C#", "GL Compatibility")
 run/max_fps=60
 config/icon="uid://bff45kdw0wpbe"
 config/show_image=true
@@ -35,6 +35,10 @@ window/stretch/mode="canvas_items"
 window/stretch/aspect="expand"
 window/vsync/vsync_mode=0
 mouse_cursor/custom_image_hotspot=Vector2(0.04, 0)
+
+[dotnet]
+
+project/assembly_name="Obbying Revival Project"
 
 [editor_plugins]
 
@@ -246,6 +250,7 @@ jolt_physics_3d/collisions/collision_margin_fraction=0.18245
 
 textures/canvas_textures/default_texture_filter=0
 rendering_device/driver.windows="d3d12"
+renderer/rendering_method="gl_compatibility"
 textures/vram_compression/import_etc2_astc=true
 textures/decals/filter=0
 occlusion_culling/occlusion_rays_per_thread=64
